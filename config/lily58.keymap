@@ -44,11 +44,11 @@
 
             display-name = "Core";
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                            &kp N6           &kp N7         &kp N8      &kp N9   &kp N0             &kp PRINTSCREEN
-&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                             &kp J            &kp L          &kp U       &kp Y    &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH
-&kp ESCAPE        &kp A   &kp R   &kp S     &kp T         &kp G                                             &kp M            &kp N          &kp E       &kp I    &kp O              &kp SEMICOLON
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V           &kp C_MUTE        &trans          &kp K            &kp H          &kp COMMA   &kp DOT  &kp DOUBLE_QUOTES  &kp SLASH
-                                  &kp LCMD  &kp LEFT_ALT  &kp LEFT_SHIFT  &ht_tp 1 SPACE    &ht_tp 2 ENTER  &kp RIGHT_SHIFT  &kp BACKSPACE  &kp DELETE
+&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                            &kp N6         &kp N7   &kp N8     &kp N9   &kp N0             &kp PRINTSCREEN
+&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                             &kp J          &kp L    &kp U      &kp Y    &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH
+&kp ESCAPE        &kp A   &kp R   &kp S     &kp T         &kp G                                             &kp M          &kp N    &kp E      &kp I    &kp O              &kp SEMICOLON
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V           &kp C_MUTE        &trans          &kp K          &kp H    &kp COMMA  &kp DOT  &kp DOUBLE_QUOTES  &kp SLASH
+                                  &kp LCMD  &kp LEFT_ALT  &kp LEFT_SHIFT  &ht_tp 1 SPACE    &ht_tp 2 ENTER  &kp BACKSPACE  &kp DEL  &kp RGUI
             >;
         };
 
