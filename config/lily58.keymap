@@ -34,7 +34,7 @@
         };
 
         find {
-            bindings = <&kp LC(F)>;
+            bindings = <&kp LC(R)>;
             key-positions = <15 16>;
         };
 
@@ -54,7 +54,7 @@
         };
 
         layer3 {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <53 54>;
         };
     };
