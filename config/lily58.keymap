@@ -107,7 +107,7 @@
 &kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                                       &kp N6         &kp N7  &kp N8     &kp N9   &kp N0             &kp PRINTSCREEN
 &kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                                        &kp J          &kp L   &kp U      &kp Y    &kp SINGLE_QUOTE   &kp DELETE
 &kp ESCAPE        &kp A   &kp R   &kp S     &kp T         &kp G                                                        &kp M          &kp N   &kp E      &kp I    &kp O              &kp SEMICOLON
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp C_MUTE                 &trans                    &kp K          &kp H   &kp COMMA  &kp DOT  &kp DOUBLE_QUOTES  &kp SLASH
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp C_MUTE                 &trans                    &kp K          &kp H   &kp COMMA  &kp DOT  &kp DOUBLE_QUOTES  &kp RIGHT_CONTROL
                                   &kp LCMD  &kp LEFT_ALT  &mo 1   &shift LEFT_SHIFT SPACE    &shift RIGHT_SHIFT ENTER  &kp BACKSPACE  &mo 2   &kp RGUI
             >;
         };
@@ -122,17 +122,17 @@
 
             display-name = "Symbol";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3   &bt BT_SEL 4                        &trans         &trans                &trans                 &trans         &trans             &trans
-&kp TILDE   &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK   &kp GREATER_THAN                    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &kp SQT            &kp CARET
-&trans      &kp MINUS        &kp PLUS          &kp EQUAL          &kp PERIOD     &kp PIPE                            &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp AT_SIGN
-&trans      &kp DOLLAR       &kp PERCENT       &kp UNDERSCORE     &kp BACKSLASH  &trans            &trans    &trans  &kp HASH       &kp SLASH             &kp COMMA              &kp QUESTION   &kp GRAVE          &trans
-                                               &trans             &trans         &trans            &trans    &trans  &trans         &trans                &trans
+&trans     &trans           &trans        &trans            &trans             &trans                                  &trans         &trans                &trans                 &trans         &trans             &trans
+&kp TILDE  &kp EXCLAMATION  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GREATER_THAN                        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &kp SQT            &trans
+&trans     &kp MINUS        &kp PLUS      &kp EQUAL         &kp PERIOD         &kp PIPE                                &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp CARET          &trans
+&trans     &kp DOLLAR       &kp PERCENT   &kp UNDERSCORE    &kp AT_SIGN        &kp NON_US_BACKSLASH  &trans    &trans  &kp SLASH      &kp POUND             &kp COMMA              &kp QUESTION   &kp DOUBLE_QUOTES  &trans
+                                          &trans            &trans             &trans                &trans    &trans  &trans         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        raise_layer {
+        Nav {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -140,7 +140,7 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Raise";
+            display-name = "Nav";
             bindings = <
 &trans  &trans                    &trans           &trans           &trans           &trans                               &trans         &trans      &trans            &trans        &trans      &trans
 &trans  &kp C_BRIGHTNESS_MAXIMUM  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9  &kp C_VOLUME_UP                      &kp PAGE_UP    &mkp LCLK   &mkp MCLK         &mkp RCLK     &kp F11     &kp HOME
