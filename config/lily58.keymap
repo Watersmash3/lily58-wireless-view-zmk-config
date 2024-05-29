@@ -25,21 +25,21 @@
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <19 20>;
+            key-positions = <32 31>;
         };
 
         redo {
             bindings = <&kp LC(LS(Z))>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
         };
 
         find {
-            bindings = <&kp LC(R)>;
+            bindings = <&kp LC(F)>;
             key-positions = <15 16>;
         };
 
         find-and-replace {
-            bindings = <&kp LC(H)>;
+            bindings = <&kp LC(R)>;
             key-positions = <14 15>;
         };
 
@@ -50,12 +50,22 @@
 
         lock {
             bindings = <&kp LG(L)>;
-            key-positions = <25 26 27 28 31 32 33 34>;
+            key-positions = <25 32 33 26>;
         };
 
         nav {
             bindings = <&mo 2>;
             key-positions = <53 54>;
+        };
+
+        delinea {
+            bindings = <&delinea>;
+            key-positions = <20 21>;
+        };
+
+        functional {
+            bindings = <&mo 3>;
+            key-positions = <52 55>;
         };
     };
 
@@ -83,10 +93,10 @@
     };
 
     macros {
-        copy: copy {
+        delinea: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(A) &kp LS(P) &kp N &kp N &kp EQUAL &kp SQT &kp N1 &kp LS(K) &kp DOT &kp M &kp N0 &kp N5 &kp O &kp G &kp Q &kp O>;
             label = "COPY";
         };
     };
@@ -104,11 +114,11 @@
 
             display-name = "Core";
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                         &kp N6              &kp N7      &kp N8     &kp N9   &kp N0             &kp PRINTSCREEN
-&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                          &kp J               &kp L       &kp U      &kp Y    &kp SINGLE_QUOTE   &kp DELETE
-&kp ESCAPE        &kp A   &kp R   &kp S     &kp T         &kp G                                          &kp M               &kp N       &kp E      &kp I    &kp O              &kp SEMICOLON
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &trans       &trans                    &kp K               &kp H       &kp COMMA  &kp DOT  &kp DOUBLE_QUOTES  &kp RIGHT_CONTROL
-                                  &kp LCMD  &kp LEFT_ALT  &mo 1   &kp SPACE    &shift RIGHT_SHIFT ENTER  &ht_tp 3 BACKSPACE  &kp DELETE  &kp RGUI
+&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                                 &kp N6              &kp N7      &kp N8     &kp N9   &kp N0             &kp PRINTSCREEN
+&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                                  &kp J               &kp L       &kp U      &kp Y    &kp SINGLE_QUOTE   &kp DELETE
+&kp ESCAPE        &kp A   &kp R   &kp S     &kp T         &kp G                                                  &kp M               &kp N       &kp E      &kp I    &kp O              &kp SEMICOLON
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V           &trans       &trans                    &kp K               &kp H       &kp COMMA  &kp DOT  &kp DOUBLE_QUOTES  &kp SLASH
+                                  &kp LCMD  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE    &shift RIGHT_SHIFT ENTER  &ht_tp 1 BACKSPACE  &kp DELETE  &kp RGUI
             >;
         };
 
